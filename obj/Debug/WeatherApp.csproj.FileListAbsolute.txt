@@ -1,0 +1,1 @@
+C:\Users\Piotrek\Documents\GitHub\WeatherApp\WeatherApp\bin\Debug\WeatherApp.exe.config
