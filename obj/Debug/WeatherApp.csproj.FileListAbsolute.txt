@@ -1,1 +1,15 @@
 C:\Users\Piotrek\Documents\GitHub\WeatherApp\WeatherApp\bin\Debug\WeatherApp.exe.config
+C:\Users\Piotrek\Documents\GitHub\WeatherApp\WeatherApp\bin\Debug\WeatherApp.exe
+C:\Users\Piotrek\Documents\GitHub\WeatherApp\WeatherApp\bin\Debug\WeatherApp.pdb
+C:\Users\Piotrek\Documents\GitHub\WeatherApp\WeatherApp\obj\Debug\WeatherApp.csprojResolveAssemblyReference.cache
+C:\Users\Piotrek\Documents\GitHub\WeatherApp\WeatherApp\obj\Debug\WeatherApp.Form1.resources
+C:\Users\Piotrek\Documents\GitHub\WeatherApp\WeatherApp\obj\Debug\WeatherApp.Properties.Resources.resources
+C:\Users\Piotrek\Documents\GitHub\WeatherApp\WeatherApp\obj\Debug\WeatherApp.csproj.GenerateResource.Cache
+C:\Users\Piotrek\Documents\GitHub\WeatherApp\WeatherApp\obj\Debug\WeatherApp.exe
+C:\Users\Piotrek\Documents\GitHub\WeatherApp\WeatherApp\obj\Debug\WeatherApp.pdb
+C:\Users\Piotrek\Documents\GitHub\WeatherApp\WeatherApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Piotrek\Documents\GitHub\WeatherApp\WeatherApp\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Piotrek\Documents\GitHub\WeatherApp\WeatherApp\bin\Debug\System.Web.Http.dll
+C:\Users\Piotrek\Documents\GitHub\WeatherApp\WeatherApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Piotrek\Documents\GitHub\WeatherApp\WeatherApp\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Piotrek\Documents\GitHub\WeatherApp\WeatherApp\bin\Debug\System.Web.Http.xml
