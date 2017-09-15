@@ -84,35 +84,7 @@ namespace WeatherApp
 
         public void SetUp()
         {
-            if (label1.Text == "Breezy")
-            {
-                label1.Text = "Rzeźko";
-            }
 
-            if (label1.Text == "Clear")
-            {
-                label1.Text = "Słonecznie";
-            }
-
-            if (label1.Text == "Windy")
-            {
-                label1.Text = "Wietrznie";
-            }
-
-            if (label1.Text == "Showers")
-            {
-                label1.Text = "Przelotne Opady";
-            }
-
-            if (label1.Text == "Rain")
-            {
-                label1.Text = "Deszcz";
-            }
-
-            if (label1.Text == "Mostly Couldy")
-            {
-                label1.Text = "Zachmurzenie";
-            }
             //Obrazki
             if (label1.Text == "Wietrznie")
             {
@@ -135,691 +107,95 @@ namespace WeatherApp
             }
 
             //Prognoza
-            PolishDays();
-            PolishCondition();
+            PolishDays(Day1);
+            PolishDays(Day2);
+            PolishDays(Day3);
+            PolishDays(Day4);
+            PolishDays(Day5);
+
+            PolishCondition(label1);
+            PolishCondition(con1);
+            PolishCondition(con2);
+            PolishCondition(con3);
+            PolishCondition(con4);
+            PolishCondition(con5);
             CorrectPic();
         }
 
-        public void PolishDays()
+        public void PolishDays(Label day)
         {
-            //Day1
-            if (Day1.Text == "Thu")
+            if (day.Text == "Mon")
             {
-                Day1.Text = "Czwartek";
+                day.Text = "Poniedziałek";
             }
-            if (Day1.Text == "Fri")
+            if (day.Text == "Tue")
             {
-                Day1.Text = "Piątek";
+                day.Text = "Wtorek";
             }
-            if (Day1.Text == "Sat")
+            if (day.Text == "Wed")
             {
-                Day1.Text = "Sobota";
+                day.Text = "Środa";
             }
-            if (Day1.Text == "Sun")
+            if (day.Text == "Thu")
             {
-                Day1.Text = "Niedziela";
+                day.Text = "Czwartek";
             }
-            if (Day1.Text == "Mon")
+            if (day.Text == "Fri")
             {
-                Day1.Text = "Poniedziałek";
+                day.Text = "Piątek";
             }
-            if (Day1.Text == "Tue")
+            if (day.Text == "Sat")
             {
-                Day1.Text = "Wtorek";
+                day.Text = "Sobota";
             }
-            if (Day1.Text == "Wed")
+            if (day.Text == "Sun")
             {
-                Day1.Text = "Środa";
-            }
-            //Day2
-            if (Day2.Text == "Thu")
-            {
-                Day2.Text = "Czwartek";
-            }
-            if (Day2.Text == "Fri")
-            {
-                Day2.Text = "Piątek";
-            }
-            if (Day2.Text == "Sat")
-            {
-                Day2.Text = "Sobota";
-            }
-            if (Day2.Text == "Sun")
-            {
-                Day2.Text = "Niedziela";
-            }
-            if (Day2.Text == "Mon")
-            {
-                Day2.Text = "Poniedziałek";
-            }
-            if (Day2.Text == "Tue")
-            {
-                Day2.Text = "Wtorek";
-            }
-            if (Day2.Text == "Wed")
-            {
-                Day2.Text = "Środa";
-            }
-
-            //Day3
-            if (Day3.Text == "Thu")
-            {
-                Day3.Text = "Czwartek";
-            }
-            if (Day3.Text == "Fri")
-            {
-                Day3.Text = "Piątek";
-            }
-            if (Day3.Text == "Sat")
-            {
-                Day3.Text = "Sobota";
-            }
-            if (Day3.Text == "Sun")
-            {
-                Day3.Text = "Niedziela";
-            }
-            if (Day3.Text == "Mon")
-            {
-                Day3.Text = "Poniedziałek";
-            }
-            if (Day3.Text == "Tue")
-            {
-                Day3.Text = "Wtorek";
-            }
-            if (Day3.Text == "Wed")
-            {
-                Day3.Text = "Środa";
-            }
-
-            //Day4
-            if (Day4.Text == "Thu")
-            {
-                Day4.Text = "Czwartek";
-            }
-            if (Day4.Text == "Fri")
-            {
-                Day4.Text = "Piątek";
-            }
-            if (Day4.Text == "Sat")
-            {
-                Day4.Text = "Sobota";
-            }
-            if (Day4.Text == "Sun")
-            {
-                Day4.Text = "Niedziela";
-            }
-            if (Day4.Text == "Mon")
-            {
-                Day4.Text = "Poniedziałek";
-            }
-            if (Day4.Text == "Tue")
-            {
-                Day4.Text = "Wtorek";
-            }
-            if (Day4.Text == "Wed")
-            {
-                Day4.Text = "Środa";
-            }
-
-            //Day5
-            if (Day5.Text == "Thu")
-            {
-                Day5.Text = "Czwartek";
-            }
-            if (Day5.Text == "Fri")
-            {
-                Day5.Text = "Piątek";
-            }
-            if (Day5.Text == "Sat")
-            {
-                Day5.Text = "Sobota";
-            }
-            if (Day5.Text == "Sun")
-            {
-                Day5.Text = "Niedziela";
-            }
-            if (Day5.Text == "Mon")
-            {
-                Day5.Text = "Poniedziałek";
-            }
-            if (Day5.Text == "Tue")
-            {
-                Day5.Text = "Wtorek";
-            }
-            if (Day5.Text == "Wed")
-            {
-                Day5.Text = "Środa";
+                day.Text = "Niedziela";
             }
         }
-        public void PolishCondition()
+        public void PolishCondition(Label con)
         {
-            //MainCon
-            if (label1.Text == "Breezy")
+            if (con.Text == "Breezy")
             {
-                label1.Text = "Rzeźko";
+                con.Text = "Rzeźko";
+            }
+            if (con.Text == "Cloudy")
+            {
+                con.Text = "Pochmurno";
+            }
+            if (con.Text == "Mostly Cloudy")
+            {
+                con.Text = "Zachmurzenie";
+            }
+            if (con.Text == "Sunny")
+            {
+                con.Text = "Słonecznie";
+            }
+            if (con.Text == "Rain")
+            {
+                con.Text = "Deszcz";
+            }
+            if (con.Text == "Showers")
+            {
+                con.Text = "Opady";
+            }
+            if (con.Text == "Scattered Showers")
+            {
+                con.Text = "Przeloty";
+            }
+            if (con.Text == "Scattered Thunderstorms")
+            {
+                con.Text = "Lekka Burza";
+            }
+            if (con.Text == "Thunderstorms")
+            {
+                con.Text = "Burza";
             }
 
-            if (label1.Text == "Sunny")
-            {
-                label1.Text = "Słonecznie";
-            }
-
-            if (label1.Text == "Windy")
-            {
-                label1.Text = "Wietrznie";
-            }
-
-            if (label1.Text == "Showers")
-            {
-                label1.Text = "Opady";
-            }
-
-            if (label1.Text == "Rain")
-            {
-                label1.Text = "Deszcz";
-            }
-
-            if (label1.Text == "Mostly Cloudy")
-            {
-                label1.Text = "Zachmurzenie";
-            }
-
-            if (label1.Text == "Scattered Showers")
-            {
-                label1.Text = "Przeloty";
-            }
-
-            if (label1.Text == "Thunderstorms")
-            {
-                label1.Text = "Burze";
-            }
-
-            if (label1.Text == "Drizzle")
-            {
-                label1.Text = "Mrzawka";
-            }
-
-            if (label1.Text == "Partly Cloudy")
-            {
-                label1.Text = "Pochmurno";
-            }
-            //Con1
-            if (con1.Text == "Breezy")
-            {
-                con1.Text = "Rzeźko";
-            }
-
-            if (con1.Text == "Sunny")
-            {
-                con1.Text = "Słonecznie";
-            }
-
-            if (con1.Text == "Windy")
-            {
-                con1.Text = "Wietrznie";
-            }
-
-            if (con1.Text == "Showers")
-            {
-                con1.Text = "Opady";
-            }
-
-            if (con1.Text == "Rain")
-            {
-                con1.Text = "Deszcz";
-            }
-
-            if (con1.Text == "Mostly Cloudy")
-            {
-                con1.Text = "Zachmurzenie";
-            }
-
-            if (con1.Text == "Scattered Showers")
-            {
-                con1.Text = "Przeloty";
-            }
-
-            if (con1.Text == "Thunderstorms")
-            {
-                con1.Text = "Burze";
-            }
-
-            if (con1.Text == "Drizzle")
-            {
-                con1.Text = "Mrzawka";
-            }
-
-            if (con1.Text == "Partly Cloudy")
-            {
-                con1.Text = "Pochmurno";
-            }
-            //Con2
-
-            if (con2.Text == "Breezy")
-            {
-                con2.Text = "Rzeźko";
-            }
-
-            if (con2.Text == "Sunny")
-            {
-                con2.Text = "Słonecznie";
-            }
-
-            if (con2.Text == "Windy")
-            {
-                con2.Text = "Wietrznie";
-            }
-
-            if (con2.Text == "Showers")
-            {
-                con2.Text = "Opady";
-            }
-
-            if (con2.Text == "Rain")
-            {
-                con2.Text = "Deszcz";
-            }
-
-            if (con2.Text == "Mostly Cloudy")
-            {
-                con2.Text = "Zachmurzenie";
-            }
-
-            if (con2.Text == "Scattered Showers")
-            {
-                con2.Text = "Przeloty";
-            }
-
-            if (con2.Text == "Thunderstorms")
-            {
-                con2.Text = "Burze";
-            }
-
-            if (con2.Text == "Drizzle")
-            {
-                con2.Text = "Mrzawka";
-            }
-
-            if (con2.Text == "Partly Cloudy")
-            {
-                con2.Text = "Pochmurno";
-            }
-
-            //Con3
-            if (con3.Text == "Breezy")
-            {
-                con3.Text = "Rzeźko";
-            }
-
-            if (con3.Text == "Sunny")
-            {
-                con3.Text = "Słonecznie";
-            }
-
-            if (con3.Text == "Windy")
-            {
-                con3.Text = "Wietrznie";
-            }
-
-            if (con3.Text == "Showers")
-            {
-                con3.Text = "Opady";
-            }
-
-            if (con3.Text == "Rain")
-            {
-                con3.Text = "Deszcz";
-            }
-
-            if (con3.Text == "Mostly Cloudy")
-            {
-                con3.Text = "Zachmurzenie";
-            }
-
-            if (con3.Text == "Scattered Showers")
-            {
-                con3.Text = "Przeloty";
-            }
-
-            if (con3.Text == "Thunderstorms")
-            {
-                con3.Text = "Burze";
-            }
-
-            if (con3.Text == "Drizzle")
-            {
-                con3.Text = "Mrzawka";
-            }
-
-            if (con3.Text == "Partly Cloudy")
-            {
-                con3.Text = "Pochmurno";
-            }
-
-            //Con4
-            if (con4.Text == "Breezy")
-            {
-                con4.Text = "Rzeźko";
-            }
-
-            if (con4.Text == "Sunny")
-            {
-                con4.Text = "Słonecznie";
-            }
-
-            if (con4.Text == "Windy")
-            {
-                con4.Text = "Wietrznie";
-            }
-
-            if (con4.Text == "Showers")
-            {
-                con4.Text = "Opady";
-            }
-
-            if (con4.Text == "Rain")
-            {
-                con4.Text = "Deszcz";
-            }
-
-            if (con4.Text == "Mostly Cloudy")
-            {
-                con4.Text = "Zachmurzenie";
-            }
-
-            if (con4.Text == "Scattered Showers")
-            {
-                con4.Text = "Przeloty";
-            }
-
-            if (con4.Text == "Thunderstorms")
-            {
-                con4.Text = "Burze";
-            }
-
-            if (con4.Text == "Drizzle")
-            {
-                con4.Text = "Mrzawka";
-            }
-
-            if (con4.Text == "Partly Cloudy")
-            {
-                con4.Text = "Pochmurno";
-            }
-
-            //Con5
-
-            if (con5.Text == "Breezy")
-            {
-                con5.Text = "Rzeźko";
-            }
-
-            if (con5.Text == "Sunny")
-            {
-                con5.Text = "Słonecznie";
-            }
-
-            if (con5.Text == "Windy")
-            {
-                con5.Text = "Wietrznie";
-            }
-
-            if (con5.Text == "Showers")
-            {
-                con5.Text = "Opady";
-            }
-
-            if (con5.Text == "Rain")
-            {
-                con5.Text = "Deszcz";
-            }
-
-            if (con5.Text == "Mostly Cloudy")
-            {
-                con5.Text = "Zachmurzenie";
-            }
-
-            if (con5.Text == "Scattered Showers")
-            {
-                con5.Text = "Przeloty";
-            }
-
-            if (con5.Text == "Thunderstorms")
-            {
-                con5.Text = "Burze";
-            }
-
-            if (con5.Text == "Drizzle")
-            {
-                con5.Text = "Mrzawka";
-            }
-
-            if (con5.Text == "Partly Cloudy")
-            {
-                con5.Text = "Pochmurno";
-            }
         }
         public void CorrectPic()
         {
-            if (con1.Text == "Wietrznie")
-            {
-                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-                string filePath = Path.Combine(directory, "Pack\\breezy.png");
-                pic1.Image = Image.FromFile(filePath);
-            }
-            if (con1.Text == "Słonecznie")
-            {
-                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-                string filePath = Path.Combine(directory, "Pack\\sunny.png");
-                pic1.Image = Image.FromFile(filePath);
-            }
-            if (con1.Text == "Rzeźko")
-            {
-                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-                string filePath = Path.Combine(directory, "Pack\\windy.png");
-                pic1.Image = Image.FromFile(filePath);
-            }
-            if (con1.Text == "Opady")
-            {
-                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-                string filePath = Path.Combine(directory, "Pack\\rain.png");
-                pic1.Image = Image.FromFile(filePath);
-            }
-            if (con1.Text == "Zachmurzenie")
-            {
-                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-                string filePath = Path.Combine(directory, "Pack\\cloudy.png");
-                pic1.Image = Image.FromFile(filePath);
-            }
-            if (con1.Text == "Deszcz")
-            {
-                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-                string filePath = Path.Combine(directory, "Pack\\heavy rain.png");
-                pic1.Image = Image.FromFile(filePath);
-            }
-            if (con1.Text == "Przeloty")
-            {
-                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-                string filePath = Path.Combine(directory, "Pack\\light rain.png");
-                pic1.Image = Image.FromFile(filePath);
-            }
-
-            //con2
-            if (con2.Text == "Wietrznie")
-            {
-                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-                string filePath = Path.Combine(directory, "Pack\\breezy.png");
-                pic2.Image = Image.FromFile(filePath);
-            }
-            if (con2.Text == "Słonecznie")
-            {
-                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-                string filePath = Path.Combine(directory, "Pack\\sunny.png");
-                pic2.Image = Image.FromFile(filePath);
-            }
-            if (con2.Text == "Rzeźko")
-            {
-                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-                string filePath = Path.Combine(directory, "Pack\\windy.png");
-                pic2.Image = Image.FromFile(filePath);
-            }
-            if (con2.Text == "Opady")
-            {
-                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-                string filePath = Path.Combine(directory, "Pack\\rain.png");
-                pic2.Image = Image.FromFile(filePath);
-            }
-            if (con2.Text == "Zachmurzenie")
-            {
-                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-                string filePath = Path.Combine(directory, "Pack\\cloudy.png");
-                pic2.Image = Image.FromFile(filePath);
-            }
-            if (con2.Text == "Deszcz")
-            {
-                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-                string filePath = Path.Combine(directory, "Pack\\heavy rain.png");
-                pic2.Image = Image.FromFile(filePath);
-            }
-            if (con2.Text == "Przeloty")
-            {
-                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-                string filePath = Path.Combine(directory, "Pack\\light rain.png");
-                pic2.Image = Image.FromFile(filePath);
-            }
-
-            //con3
-            if (con3.Text == "Wietrznie")
-            {
-                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-                string filePath = Path.Combine(directory, "Pack\\breezy.png");
-                pic3.Image = Image.FromFile(filePath);
-            }
-            if (con3.Text == "Słonecznie")
-            {
-                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-                string filePath = Path.Combine(directory, "Pack\\sunny.png");
-                pic3.Image = Image.FromFile(filePath);
-            }
-            if (con3.Text == "Rzeźko")
-            {
-                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-                string filePath = Path.Combine(directory, "Pack\\windy.png");
-                pic3.Image = Image.FromFile(filePath);
-            }
-            if (con3.Text == "Opady")
-            {
-                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-                string filePath = Path.Combine(directory, "Pack\\rain.png");
-                pic3.Image = Image.FromFile(filePath);
-            }
-            if (con3.Text == "Zachmurzenie")
-            {
-                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-                string filePath = Path.Combine(directory, "Pack\\cloudy.png");
-                pic3.Image = Image.FromFile(filePath);
-            }
-            if (con3.Text == "Deszcz")
-            {
-                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-                string filePath = Path.Combine(directory, "Pack\\heavy rain.png");
-                pic3.Image = Image.FromFile(filePath);
-            }
-            if (con3.Text == "Przeloty")
-            {
-                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-                string filePath = Path.Combine(directory, "Pack\\light rain.png");
-                pic3.Image = Image.FromFile(filePath);
-            }
-
-            //con4
-            if (con4.Text == "Wietrznie")
-            {
-                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-                string filePath = Path.Combine(directory, "Pack\\breezy.png");
-                pic4.Image = Image.FromFile(filePath);
-            }
-            if (con4.Text == "Słonecznie")
-            {
-                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-                string filePath = Path.Combine(directory, "Pack\\sunny.png");
-                pic4.Image = Image.FromFile(filePath);
-            }
-            if (con4.Text == "Rzeźko")
-            {
-                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-                string filePath = Path.Combine(directory, "Pack\\windy.png");
-                pic4.Image = Image.FromFile(filePath);
-            }
-            if (con4.Text == "Opady")
-            {
-                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-                string filePath = Path.Combine(directory, "Pack\\rain.png");
-                pic4.Image = Image.FromFile(filePath);
-            }
-            if (con4.Text == "Zachmurzenie")
-            {
-                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-                string filePath = Path.Combine(directory, "Pack\\cloudy.png");
-                pic4.Image = Image.FromFile(filePath);
-            }
-            if (con4.Text == "Deszcz")
-            {
-                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-                string filePath = Path.Combine(directory, "Pack\\heavy rain.png");
-                pic4.Image = Image.FromFile(filePath);
-            }
-            if (con4.Text == "Przeloty")
-            {
-                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-                string filePath = Path.Combine(directory, "Pack\\light rain.png");
-                pic4.Image = Image.FromFile(filePath);
-            }
-
-            //con5
-
-            if (con5.Text == "Wietrznie")
-            {
-                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-                string filePath = Path.Combine(directory, "Pack\\breezy.png");
-                pic5.Image = Image.FromFile(filePath);
-            }
-            if (con5.Text == "Słonecznie")
-            {
-                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-                string filePath = Path.Combine(directory, "Pack\\sunny.png");
-                pic5.Image = Image.FromFile(filePath);
-            }
-            if (con5.Text == "Rzeźko")
-            {
-                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-                string filePath = Path.Combine(directory, "Pack\\windy.png");
-                pic5.Image = Image.FromFile(filePath);
-            }
-            if (con5.Text == "Opady")
-            {
-                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-                string filePath = Path.Combine(directory, "Pack\\rain.png");
-                pic5.Image = Image.FromFile(filePath);
-            }
-            if (con5.Text == "Zachmurzenie")
-            {
-                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-                string filePath = Path.Combine(directory, "Pack\\cloudy.png");
-                pic5.Image = Image.FromFile(filePath);
-            }
-            if (con5.Text == "Deszcz")
-            {
-                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-                string filePath = Path.Combine(directory, "Pack\\heavy rain.png");
-                pic5.Image = Image.FromFile(filePath);
-            }
-            if (con5.Text == "Przeloty")
-            {
-                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-                string filePath = Path.Combine(directory, "Pack\\light rain.png");
-                pic5.Image = Image.FromFile(filePath);
-            }
+            
         }
 
     }
