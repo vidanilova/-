@@ -85,27 +85,6 @@ namespace WeatherApp
         public void SetUp()
         {
 
-            //Obrazki
-            if (label1.Text == "Wietrznie")
-            {
-                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-                string filePath = Path.Combine(directory, "Pack\\breezy.png");
-                pictureBox2.Image = Image.FromFile(filePath);
-            }
-            if (label1.Text == "Słonecznie")
-            {
-                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-                string filePath = Path.Combine(directory, "Pack\\sunny.png");
-                pictureBox2.Image = Image.FromFile(filePath);
-            }
-
-            if (label1.Text == "Rzeźko")
-            {
-                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-                string filePath = Path.Combine(directory, "Pack\\windy.png");
-                pictureBox2.Image = Image.FromFile(filePath);
-            }
-
             //Prognoza
             PolishDays(Day1);
             PolishDays(Day2);
@@ -119,7 +98,13 @@ namespace WeatherApp
             PolishCondition(con3);
             PolishCondition(con4);
             PolishCondition(con5);
-            CorrectPic();
+
+            CorrectPic(label1,pictureBox2);
+            CorrectPic(con1, pic1);
+            CorrectPic(con2, pic2);
+            CorrectPic(con3, pic3);
+            CorrectPic(con4, pic4);
+            CorrectPic(con5, pic5);
         }
 
         public void PolishDays(Label day)
@@ -191,11 +176,90 @@ namespace WeatherApp
             {
                 con.Text = "Burza";
             }
+            if (con.Text == "Windy")
+            {
+                con.Text = "Wietrznie";
+            }
 
         }
-        public void CorrectPic()
+        public void CorrectPic(Label l, PictureBox p)
         {
-            
+            if (l.Text == "Wietrznie")
+            {
+                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+                string filePath = Path.Combine(directory, "Pack\\wietrznie.png");
+                p.Image = Image.FromFile(filePath);
+            }
+
+            if (l.Text == "Burza")
+            {
+                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+                string filePath = Path.Combine(directory, "Pack\\burza.png");
+                p.Image = Image.FromFile(filePath);
+            }
+
+            if (l.Text == "Deszcz")
+            {
+                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+                string filePath = Path.Combine(directory, "Pack\\deszcz.png");
+                p.Image = Image.FromFile(filePath);
+            }
+
+            if (l.Text == "Lekka Burza")
+            {
+                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+                string filePath = Path.Combine(directory, "Pack\\lekka burza.png");
+                p.Image = Image.FromFile(filePath);
+            }
+
+            if (l.Text == "Mrzawka")
+            {
+                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+                string filePath = Path.Combine(directory, "Pack\\Mrzawka.png");
+                p.Image = Image.FromFile(filePath);
+            }
+
+            if (l.Text == "Opady")
+            {
+                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+                string filePath = Path.Combine(directory, "Pack\\opady.png");
+                p.Image = Image.FromFile(filePath);
+            }
+
+            if (l.Text == "Pochmurnie")
+            {
+                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+                string filePath = Path.Combine(directory, "Pack\\pochmurnie.png");
+                p.Image = Image.FromFile(filePath);
+            }
+
+            if (l.Text == "Przeloty")
+            {
+                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+                string filePath = Path.Combine(directory, "Pack\\przeloty.png");
+                p.Image = Image.FromFile(filePath);
+            }
+
+            if (l.Text == "Rzeźko")
+            {
+                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+                string filePath = Path.Combine(directory, "Pack\\rzeźko.png");
+                p.Image = Image.FromFile(filePath);
+            }
+
+            if (l.Text == "Słonecznie")
+            {
+                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+                string filePath = Path.Combine(directory, "Pack\\słonecznie.png");
+                p.Image = Image.FromFile(filePath);
+            }
+
+            if (l.Text == "Zachmurzenie")
+            {
+                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+                string filePath = Path.Combine(directory, "Pack\\zachmurzenie.png");
+                p.Image = Image.FromFile(filePath);
+            }
         }
 
     }
