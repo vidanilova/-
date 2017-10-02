@@ -45,28 +45,24 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pic1 = new System.Windows.Forms.PictureBox();
             this.con1 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.temp1 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.Day1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pic2 = new System.Windows.Forms.PictureBox();
             this.con2 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.temp2 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.Day2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pic3 = new System.Windows.Forms.PictureBox();
             this.con3 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.temp3 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.Day3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.pic4 = new System.Windows.Forms.PictureBox();
             this.con4 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.temp4 = new System.Windows.Forms.Label();
@@ -79,18 +75,22 @@
             this.temp5 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.Day5 = new System.Windows.Forms.Label();
+            this.pic4 = new System.Windows.Forms.PictureBox();
+            this.pic3 = new System.Windows.Forms.PictureBox();
+            this.pic2 = new System.Windows.Forms.PictureBox();
+            this.pic1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic1)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic2)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic3)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic4)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic1)).BeginInit();
             this.SuspendLayout();
             // 
             // City
@@ -212,7 +212,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 11;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox1
             // 
@@ -284,16 +283,6 @@
             this.panel1.Size = new System.Drawing.Size(534, 109);
             this.panel1.TabIndex = 16;
             // 
-            // pic1
-            // 
-            this.pic1.Image = global::WeatherApp.Properties.Resources.breezy;
-            this.pic1.Location = new System.Drawing.Point(443, 11);
-            this.pic1.Name = "pic1";
-            this.pic1.Size = new System.Drawing.Size(64, 56);
-            this.pic1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pic1.TabIndex = 23;
-            this.pic1.TabStop = false;
-            // 
             // con1
             // 
             this.con1.AutoSize = true;
@@ -362,16 +351,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(534, 109);
             this.panel2.TabIndex = 20;
-            // 
-            // pic2
-            // 
-            this.pic2.Image = global::WeatherApp.Properties.Resources.breezy;
-            this.pic2.Location = new System.Drawing.Point(443, 12);
-            this.pic2.Name = "pic2";
-            this.pic2.Size = new System.Drawing.Size(64, 56);
-            this.pic2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pic2.TabIndex = 22;
-            this.pic2.TabStop = false;
             // 
             // con2
             // 
@@ -442,16 +421,6 @@
             this.panel3.Size = new System.Drawing.Size(534, 109);
             this.panel3.TabIndex = 21;
             // 
-            // pic3
-            // 
-            this.pic3.Image = global::WeatherApp.Properties.Resources.breezy;
-            this.pic3.Location = new System.Drawing.Point(443, 6);
-            this.pic3.Name = "pic3";
-            this.pic3.Size = new System.Drawing.Size(64, 56);
-            this.pic3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pic3.TabIndex = 21;
-            this.pic3.TabStop = false;
-            // 
             // con3
             // 
             this.con3.AutoSize = true;
@@ -520,16 +489,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(534, 109);
             this.panel4.TabIndex = 22;
-            // 
-            // pic4
-            // 
-            this.pic4.Image = global::WeatherApp.Properties.Resources.breezy;
-            this.pic4.Location = new System.Drawing.Point(443, 3);
-            this.pic4.Name = "pic4";
-            this.pic4.Size = new System.Drawing.Size(64, 56);
-            this.pic4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pic4.TabIndex = 20;
-            this.pic4.TabStop = false;
             // 
             // con4
             // 
@@ -665,6 +624,46 @@
             this.Day5.TabIndex = 17;
             this.Day5.Text = "Day5";
             // 
+            // pic4
+            // 
+            this.pic4.Image = global::WeatherApp.Properties.Resources.breezy;
+            this.pic4.Location = new System.Drawing.Point(443, 3);
+            this.pic4.Name = "pic4";
+            this.pic4.Size = new System.Drawing.Size(64, 56);
+            this.pic4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic4.TabIndex = 20;
+            this.pic4.TabStop = false;
+            // 
+            // pic3
+            // 
+            this.pic3.Image = global::WeatherApp.Properties.Resources.breezy;
+            this.pic3.Location = new System.Drawing.Point(443, 6);
+            this.pic3.Name = "pic3";
+            this.pic3.Size = new System.Drawing.Size(64, 56);
+            this.pic3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic3.TabIndex = 21;
+            this.pic3.TabStop = false;
+            // 
+            // pic2
+            // 
+            this.pic2.Image = global::WeatherApp.Properties.Resources.breezy;
+            this.pic2.Location = new System.Drawing.Point(443, 12);
+            this.pic2.Name = "pic2";
+            this.pic2.Size = new System.Drawing.Size(64, 56);
+            this.pic2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic2.TabIndex = 22;
+            this.pic2.TabStop = false;
+            // 
+            // pic1
+            // 
+            this.pic1.Image = global::WeatherApp.Properties.Resources.breezy;
+            this.pic1.Location = new System.Drawing.Point(443, 11);
+            this.pic1.Name = "pic1";
+            this.pic1.Size = new System.Drawing.Size(64, 56);
+            this.pic1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic1.TabIndex = 23;
+            this.pic1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -701,19 +700,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic2)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic3)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic4)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
