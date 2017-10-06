@@ -84,6 +84,9 @@ namespace WeatherApp
 
         public void SetUp()
         {
+            tabControl1.Appearance = TabAppearance.FlatButtons;
+            tabControl1.ItemSize = new Size(0, 1);
+            tabControl1.SizeMode = TabSizeMode.Fixed;
 
             //Prognoza
             PolishDays(Day1);
@@ -262,5 +265,21 @@ namespace WeatherApp
             }
         }
 
+
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabPage2;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabPage1;
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

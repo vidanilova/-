@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.Translator</name>
+    </assembly>
+    <members>
+        <member name="T:Yam.Microsoft.Translator.AdmAuthentication">
+            <summary>
+            http://msdn.microsoft.com/en-us/library/ff512437.aspx
+            </summary>
+        </member>
+        <member name="T:Yam.Microsoft.Translator.Translator">
+            <summary>
+            http://msdn.microsoft.com/en-us/library/ff512438.aspx
+            </summary>
+        </member>
+        <member name="M:Yam.Microsoft.Translator.Translator.Translate(System.String)">
+            <summary>
+            http://msdn.microsoft.com/en-us/library/ff512437.aspx
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yam.Microsoft.Translator.Translator.TranslateArray(System.String[])">
+            <summary>
+            http://msdn.microsoft.com/en-us/library/ff512438.aspx
+            </summary>
+            <param name="strs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yam.Microsoft.Translator.Translator.GetLanguagesForTranslate">
+            <summary>
+            http://msdn.microsoft.com/en-us/library/ff512432.aspx
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -116,6 +116,7 @@
     <None Include="Resources\sunny-icon-23506.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="bin\Debug\Pack\map.png" />
     <Content Include="Translator.exe" />
     <Content Include="Translator.pdb" />
   </ItemGroup>
