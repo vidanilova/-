@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.con5 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
@@ -82,11 +82,22 @@
             this.Local = new System.Windows.Forms.Label();
             this.City = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.map1 = new System.Windows.Forms.PictureBox();
+            this.mapl = new System.Windows.Forms.Label();
+            this.mapl_c = new System.Windows.Forms.Label();
+            this.mapl1_c = new System.Windows.Forms.Label();
+            this.mapl1 = new System.Windows.Forms.Label();
+            this.map2 = new System.Windows.Forms.PictureBox();
+            this.mapl2_c = new System.Windows.Forms.Label();
+            this.mapl2 = new System.Windows.Forms.Label();
+            this.map3 = new System.Windows.Forms.PictureBox();
+            this.mapl3_c = new System.Windows.Forms.Label();
+            this.mapl3 = new System.Windows.Forms.Label();
+            this.map4 = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic5)).BeginInit();
@@ -100,7 +111,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pic1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.map1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.map2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.map3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.map4)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -112,20 +128,6 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1189, 637);
             this.tabControl1.TabIndex = 25;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.BackgroundImage = global::WeatherApp.Properties.Resources.map;
-            this.tabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tabPage2.Controls.Add(this.button2);
-            this.tabPage2.Controls.Add(this.pictureBox3);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1181, 611);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // tabPage1
             // 
@@ -158,6 +160,19 @@
             this.tabPage1.Size = new System.Drawing.Size(1181, 611);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Crimson;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button1.Location = new System.Drawing.Point(62, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(156, 52);
+            this.button1.TabIndex = 45;
+            this.button1.Text = "Mapa";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_2);
             // 
             // panel5
             // 
@@ -731,18 +746,31 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // button1
+            // tabPage2
             // 
-            this.button1.BackColor = System.Drawing.Color.Crimson;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.Location = new System.Drawing.Point(62, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(156, 52);
-            this.button1.TabIndex = 45;
-            this.button1.Text = "Mapa";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_2);
+            this.tabPage2.BackgroundImage = global::WeatherApp.Properties.Resources.map;
+            this.tabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPage2.Controls.Add(this.mapl3_c);
+            this.tabPage2.Controls.Add(this.mapl3);
+            this.tabPage2.Controls.Add(this.map4);
+            this.tabPage2.Controls.Add(this.mapl2_c);
+            this.tabPage2.Controls.Add(this.mapl2);
+            this.tabPage2.Controls.Add(this.map3);
+            this.tabPage2.Controls.Add(this.mapl1_c);
+            this.tabPage2.Controls.Add(this.mapl1);
+            this.tabPage2.Controls.Add(this.map2);
+            this.tabPage2.Controls.Add(this.mapl_c);
+            this.tabPage2.Controls.Add(this.mapl);
+            this.tabPage2.Controls.Add(this.map1);
+            this.tabPage2.Controls.Add(this.button2);
+            this.tabPage2.Controls.Add(this.pictureBox3);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1181, 611);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -772,6 +800,151 @@
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
+            // map1
+            // 
+            this.map1.BackColor = System.Drawing.Color.Transparent;
+            this.map1.Image = global::WeatherApp.Properties.Resources.breezy;
+            this.map1.Location = new System.Drawing.Point(660, 333);
+            this.map1.Name = "map1";
+            this.map1.Size = new System.Drawing.Size(55, 46);
+            this.map1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.map1.TabIndex = 48;
+            this.map1.TabStop = false;
+            this.map1.Click += new System.EventHandler(this.map1_Click);
+            // 
+            // mapl
+            // 
+            this.mapl.AutoSize = true;
+            this.mapl.BackColor = System.Drawing.Color.Transparent;
+            this.mapl.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.mapl.ForeColor = System.Drawing.Color.OrangeRed;
+            this.mapl.Location = new System.Drawing.Point(666, 368);
+            this.mapl.Name = "mapl";
+            this.mapl.Size = new System.Drawing.Size(49, 19);
+            this.mapl.TabIndex = 49;
+            this.mapl.Text = "mapl1";
+            this.mapl.Visible = false;
+            // 
+            // mapl_c
+            // 
+            this.mapl_c.AutoSize = true;
+            this.mapl_c.BackColor = System.Drawing.Color.Transparent;
+            this.mapl_c.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.mapl_c.ForeColor = System.Drawing.Color.OrangeRed;
+            this.mapl_c.Location = new System.Drawing.Point(710, 353);
+            this.mapl_c.Name = "mapl_c";
+            this.mapl_c.Size = new System.Drawing.Size(42, 15);
+            this.mapl_c.TabIndex = 50;
+            this.mapl_c.Text = "mapl1";
+            // 
+            // mapl1_c
+            // 
+            this.mapl1_c.AutoSize = true;
+            this.mapl1_c.BackColor = System.Drawing.Color.Transparent;
+            this.mapl1_c.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.mapl1_c.ForeColor = System.Drawing.Color.OrangeRed;
+            this.mapl1_c.Location = new System.Drawing.Point(662, 267);
+            this.mapl1_c.Name = "mapl1_c";
+            this.mapl1_c.Size = new System.Drawing.Size(42, 15);
+            this.mapl1_c.TabIndex = 53;
+            this.mapl1_c.Text = "mapl1";
+            // 
+            // mapl1
+            // 
+            this.mapl1.AutoSize = true;
+            this.mapl1.BackColor = System.Drawing.Color.Transparent;
+            this.mapl1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.mapl1.ForeColor = System.Drawing.Color.OrangeRed;
+            this.mapl1.Location = new System.Drawing.Point(618, 282);
+            this.mapl1.Name = "mapl1";
+            this.mapl1.Size = new System.Drawing.Size(49, 19);
+            this.mapl1.TabIndex = 52;
+            this.mapl1.Text = "mapl1";
+            this.mapl1.Visible = false;
+            // 
+            // map2
+            // 
+            this.map2.BackColor = System.Drawing.Color.Transparent;
+            this.map2.Image = global::WeatherApp.Properties.Resources.breezy;
+            this.map2.Location = new System.Drawing.Point(612, 247);
+            this.map2.Name = "map2";
+            this.map2.Size = new System.Drawing.Size(55, 46);
+            this.map2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.map2.TabIndex = 51;
+            this.map2.TabStop = false;
+            // 
+            // mapl2_c
+            // 
+            this.mapl2_c.AutoSize = true;
+            this.mapl2_c.BackColor = System.Drawing.Color.Transparent;
+            this.mapl2_c.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.mapl2_c.ForeColor = System.Drawing.Color.OrangeRed;
+            this.mapl2_c.Location = new System.Drawing.Point(524, 233);
+            this.mapl2_c.Name = "mapl2_c";
+            this.mapl2_c.Size = new System.Drawing.Size(42, 15);
+            this.mapl2_c.TabIndex = 56;
+            this.mapl2_c.Text = "mapl1";
+            // 
+            // mapl2
+            // 
+            this.mapl2.AutoSize = true;
+            this.mapl2.BackColor = System.Drawing.Color.Transparent;
+            this.mapl2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.mapl2.ForeColor = System.Drawing.Color.OrangeRed;
+            this.mapl2.Location = new System.Drawing.Point(480, 248);
+            this.mapl2.Name = "mapl2";
+            this.mapl2.Size = new System.Drawing.Size(57, 19);
+            this.mapl2.TabIndex = 55;
+            this.mapl2.Text = "label17";
+            this.mapl2.Visible = false;
+            // 
+            // map3
+            // 
+            this.map3.BackColor = System.Drawing.Color.Transparent;
+            this.map3.Image = global::WeatherApp.Properties.Resources.breezy;
+            this.map3.Location = new System.Drawing.Point(474, 213);
+            this.map3.Name = "map3";
+            this.map3.Size = new System.Drawing.Size(55, 46);
+            this.map3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.map3.TabIndex = 54;
+            this.map3.TabStop = false;
+            // 
+            // mapl3_c
+            // 
+            this.mapl3_c.AutoSize = true;
+            this.mapl3_c.BackColor = System.Drawing.Color.Transparent;
+            this.mapl3_c.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.mapl3_c.ForeColor = System.Drawing.Color.OrangeRed;
+            this.mapl3_c.Location = new System.Drawing.Point(1147, 211);
+            this.mapl3_c.Name = "mapl3_c";
+            this.mapl3_c.Size = new System.Drawing.Size(42, 15);
+            this.mapl3_c.TabIndex = 59;
+            this.mapl3_c.Text = "mapl1";
+            // 
+            // mapl3
+            // 
+            this.mapl3.AutoSize = true;
+            this.mapl3.BackColor = System.Drawing.Color.Transparent;
+            this.mapl3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.mapl3.ForeColor = System.Drawing.Color.OrangeRed;
+            this.mapl3.Location = new System.Drawing.Point(1103, 226);
+            this.mapl3.Name = "mapl3";
+            this.mapl3.Size = new System.Drawing.Size(57, 19);
+            this.mapl3.TabIndex = 58;
+            this.mapl3.Text = "label17";
+            this.mapl3.Visible = false;
+            // 
+            // map4
+            // 
+            this.map4.BackColor = System.Drawing.Color.Transparent;
+            this.map4.Image = global::WeatherApp.Properties.Resources.breezy;
+            this.map4.Location = new System.Drawing.Point(1096, 180);
+            this.map4.Name = "map4";
+            this.map4.Size = new System.Drawing.Size(55, 46);
+            this.map4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.map4.TabIndex = 57;
+            this.map4.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -785,7 +958,6 @@
             this.Text = "Prognoza Lokalna";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -805,7 +977,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pic1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.map1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.map2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.map3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.map4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -868,6 +1046,18 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox map1;
+        private System.Windows.Forms.Label mapl;
+        private System.Windows.Forms.Label mapl_c;
+        private System.Windows.Forms.Label mapl1_c;
+        private System.Windows.Forms.Label mapl1;
+        private System.Windows.Forms.PictureBox map2;
+        private System.Windows.Forms.Label mapl2_c;
+        private System.Windows.Forms.Label mapl2;
+        private System.Windows.Forms.PictureBox map3;
+        private System.Windows.Forms.Label mapl3_c;
+        private System.Windows.Forms.Label mapl3;
+        private System.Windows.Forms.PictureBox map4;
     }
 }
 

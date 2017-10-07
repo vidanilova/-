@@ -18,7 +18,7 @@ namespace WeatherApp
 {
     public partial class Form1 : Form
     {
-        String Querry;
+        String Querry,QuerryKrosno, QuerryJaslo, QuerryPrzemysl;
         Weather info = new Weather();
         public Form1()
         {
@@ -38,7 +38,15 @@ namespace WeatherApp
         private void Form1_Load(object sender, EventArgs e)
         {
             Querry = "https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where woeid = 516922 and u='c' &format=json";
+            QuerryKrosno = "https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where woeid = 502438 and u='c' &format=json";
+            QuerryJaslo = "https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where woeid = 497151 and u='c' &format=json";
+            QuerryPrzemysl = "https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where woeid = 514387 and u='c' &format=json";
+
             var Generalforecast = info.GetWeather(Querry);
+            var GeneralforecastKrosno = info.GetWeather(QuerryKrosno);
+            var GeneralforecastJaslo = info.GetWeather(QuerryJaslo);
+            var GeneralforecastPrzemysl = info.GetWeather(QuerryPrzemysl);
+
             var Windforecast = info.GetWeatherWind(Querry);
             var Atmosphereforecast = info.GetWeatherAtmosphere(Querry);
             var AstronomyTime = info.GetAstrononyTime(Querry);
@@ -72,6 +80,16 @@ namespace WeatherApp
             con4.Text = Forecast[3].text;
             con5.Text = Forecast[4].text;
 
+            mapl_c.Text = Generalforecast.temp + " C";
+            mapl1_c.Text = GeneralforecastKrosno.temp + " C";
+            mapl2_c.Text = GeneralforecastJaslo.temp + " C";
+            mapl3_c.Text = GeneralforecastPrzemysl.temp + " C";
+
+            mapl.Text = Generalforecast.text;
+            mapl1.Text = GeneralforecastKrosno.text;
+            mapl2.Text = GeneralforecastJaslo.text;
+            mapl3.Text = GeneralforecastPrzemysl.text;
+
             SetUp();
         }
 
@@ -101,6 +119,10 @@ namespace WeatherApp
             PolishCondition(con3);
             PolishCondition(con4);
             PolishCondition(con5);
+            PolishCondition(mapl);
+            PolishCondition(mapl1);
+            PolishCondition(mapl2);
+            PolishCondition(mapl3);
 
             CorrectPic(label1,pictureBox2);
             CorrectPic(con1, pic1);
@@ -108,6 +130,10 @@ namespace WeatherApp
             CorrectPic(con3, pic3);
             CorrectPic(con4, pic4);
             CorrectPic(con5, pic5);
+            CorrectPic(mapl, map1);
+            CorrectPic(mapl1, map2);
+            CorrectPic(mapl2, map3);
+            CorrectPic(mapl3, map4);
         }
 
         public void PolishDays(Label day)
@@ -229,7 +255,7 @@ namespace WeatherApp
                 p.Image = Image.FromFile(filePath);
             }
 
-            if (l.Text == "Pochmurnie")
+            if (l.Text == "Pochmurno")
             {
                 string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
                 string filePath = Path.Combine(directory, "Pack\\pochmurnie.png");
@@ -280,6 +306,20 @@ namespace WeatherApp
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             Application.Exit();
+            Application.Exit();
+            Application.Exit();
+            Application.Exit();
+            Application.Exit();
+        }
+
+        private void pic1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void map1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
