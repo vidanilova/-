@@ -18,7 +18,7 @@ namespace WeatherApp
 {
     public partial class Form1 : Form
     {
-        String Querry,QuerryKrosno, QuerryJaslo, QuerryPrzemysl;
+        String Querry,QuerryKrosno, QuerryJaslo, QuerryPrzemysl, QuerrySanok;
         Weather info = new Weather();
         public Form1()
         {
@@ -41,11 +41,13 @@ namespace WeatherApp
             QuerryKrosno = "https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where woeid = 502438 and u='c' &format=json";
             QuerryJaslo = "https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where woeid = 497151 and u='c' &format=json";
             QuerryPrzemysl = "https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where woeid = 514387 and u='c' &format=json";
+            QuerrySanok = "https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where woeid = 517369 and u='c' &format=json";
 
             var Generalforecast = info.GetWeather(Querry);
             var GeneralforecastKrosno = info.GetWeather(QuerryKrosno);
             var GeneralforecastJaslo = info.GetWeather(QuerryJaslo);
             var GeneralforecastPrzemysl = info.GetWeather(QuerryPrzemysl);
+            var GeneralforecastSanok = info.GetWeather(QuerrySanok);
 
             var Windforecast = info.GetWeatherWind(Querry);
             var Atmosphereforecast = info.GetWeatherAtmosphere(Querry);
@@ -84,11 +86,13 @@ namespace WeatherApp
             mapl1_c.Text = GeneralforecastKrosno.temp + " C";
             mapl2_c.Text = GeneralforecastJaslo.temp + " C";
             mapl3_c.Text = GeneralforecastPrzemysl.temp + " C";
+            mapl4_c.Text = GeneralforecastSanok.temp + " C";
 
             mapl.Text = Generalforecast.text;
             mapl1.Text = GeneralforecastKrosno.text;
             mapl2.Text = GeneralforecastJaslo.text;
             mapl3.Text = GeneralforecastPrzemysl.text;
+            mapl4.Text = GeneralforecastSanok.text;
 
             SetUp();
         }
@@ -123,6 +127,7 @@ namespace WeatherApp
             PolishCondition(mapl1);
             PolishCondition(mapl2);
             PolishCondition(mapl3);
+            PolishCondition(mapl4);
 
             CorrectPic(label1,pictureBox2);
             CorrectPic(con1, pic1);
@@ -134,6 +139,7 @@ namespace WeatherApp
             CorrectPic(mapl1, map2);
             CorrectPic(mapl2, map3);
             CorrectPic(mapl3, map4);
+            CorrectPic(mapl4, map5);
         }
 
         public void PolishDays(Label day)
@@ -301,6 +307,11 @@ namespace WeatherApp
         private void button2_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabPage1;
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
