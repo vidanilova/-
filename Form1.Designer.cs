@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label15 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.con5 = new System.Windows.Forms.Label();
@@ -84,6 +85,16 @@
             this.City = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label17 = new System.Windows.Forms.Label();
+            this.mapl6_c = new System.Windows.Forms.Label();
+            this.mapl5_c = new System.Windows.Forms.Label();
+            this.mapl4_c = new System.Windows.Forms.Label();
+            this.mapl6 = new System.Windows.Forms.Label();
+            this.mapl5 = new System.Windows.Forms.Label();
+            this.mapl4 = new System.Windows.Forms.Label();
+            this.map7 = new System.Windows.Forms.PictureBox();
+            this.map6 = new System.Windows.Forms.PictureBox();
+            this.map5 = new System.Windows.Forms.PictureBox();
             this.mapl3_c = new System.Windows.Forms.Label();
             this.mapl3 = new System.Windows.Forms.Label();
             this.map4 = new System.Windows.Forms.PictureBox();
@@ -98,17 +109,21 @@
             this.map1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.mapl4_c = new System.Windows.Forms.Label();
-            this.mapl4 = new System.Windows.Forms.Label();
-            this.map5 = new System.Windows.Forms.PictureBox();
-            this.map6 = new System.Windows.Forms.PictureBox();
-            this.mapl5 = new System.Windows.Forms.Label();
-            this.mapl5_c = new System.Windows.Forms.Label();
-            this.map7 = new System.Windows.Forms.PictureBox();
-            this.mapl6 = new System.Windows.Forms.Label();
-            this.mapl6_c = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
+            this.map8 = new System.Windows.Forms.PictureBox();
+            this.mapl7 = new System.Windows.Forms.Label();
+            this.mapl7_c = new System.Windows.Forms.Label();
+            this.map9 = new System.Windows.Forms.PictureBox();
+            this.mapl8 = new System.Windows.Forms.Label();
+            this.mapl8_c = new System.Windows.Forms.Label();
+            this.map10 = new System.Windows.Forms.PictureBox();
+            this.mapl9 = new System.Windows.Forms.Label();
+            this.mapl9_c = new System.Windows.Forms.Label();
+            this.map11 = new System.Windows.Forms.PictureBox();
+            this.mapl10 = new System.Windows.Forms.Label();
+            this.mapl10_c = new System.Windows.Forms.Label();
+            this.map12 = new System.Windows.Forms.PictureBox();
+            this.mapl11 = new System.Windows.Forms.Label();
+            this.mapl11_c = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -124,14 +139,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.map7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.map6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.map5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.map4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.map3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.map2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.map1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.map5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.map6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.map7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.map8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.map9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.map10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.map11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.map12)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -177,6 +197,16 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label15.Location = new System.Drawing.Point(8, 610);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(189, 15);
+            this.label15.TabIndex = 46;
+            this.label15.Text = "@ Piotr Stachaczyński v0.5  2017";
             // 
             // button1
             // 
@@ -786,8 +816,23 @@
             this.tabPage2.Controls.Add(this.mapl1_c);
             this.tabPage2.Controls.Add(this.mapl1);
             this.tabPage2.Controls.Add(this.map2);
+            this.tabPage2.Controls.Add(this.mapl9_c);
+            this.tabPage2.Controls.Add(this.mapl11_c);
+            this.tabPage2.Controls.Add(this.mapl10_c);
+            this.tabPage2.Controls.Add(this.mapl8_c);
+            this.tabPage2.Controls.Add(this.mapl7_c);
             this.tabPage2.Controls.Add(this.mapl_c);
+            this.tabPage2.Controls.Add(this.mapl9);
+            this.tabPage2.Controls.Add(this.mapl11);
+            this.tabPage2.Controls.Add(this.mapl10);
+            this.tabPage2.Controls.Add(this.mapl8);
+            this.tabPage2.Controls.Add(this.mapl7);
             this.tabPage2.Controls.Add(this.mapl);
+            this.tabPage2.Controls.Add(this.map10);
+            this.tabPage2.Controls.Add(this.map12);
+            this.tabPage2.Controls.Add(this.map11);
+            this.tabPage2.Controls.Add(this.map9);
+            this.tabPage2.Controls.Add(this.map8);
             this.tabPage2.Controls.Add(this.map1);
             this.tabPage2.Controls.Add(this.button2);
             this.tabPage2.Controls.Add(this.pictureBox3);
@@ -798,6 +843,124 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label17.Location = new System.Drawing.Point(4, 610);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(189, 15);
+            this.label17.TabIndex = 63;
+            this.label17.Text = "@ Piotr Stachaczyński v0.5  2017";
+            // 
+            // mapl6_c
+            // 
+            this.mapl6_c.AutoSize = true;
+            this.mapl6_c.BackColor = System.Drawing.Color.Transparent;
+            this.mapl6_c.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.mapl6_c.ForeColor = System.Drawing.Color.OrangeRed;
+            this.mapl6_c.Location = new System.Drawing.Point(573, 560);
+            this.mapl6_c.Name = "mapl6_c";
+            this.mapl6_c.Size = new System.Drawing.Size(42, 15);
+            this.mapl6_c.TabIndex = 62;
+            this.mapl6_c.Text = "mapl1";
+            // 
+            // mapl5_c
+            // 
+            this.mapl5_c.AutoSize = true;
+            this.mapl5_c.BackColor = System.Drawing.Color.Transparent;
+            this.mapl5_c.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.mapl5_c.ForeColor = System.Drawing.Color.OrangeRed;
+            this.mapl5_c.Location = new System.Drawing.Point(155, 328);
+            this.mapl5_c.Name = "mapl5_c";
+            this.mapl5_c.Size = new System.Drawing.Size(42, 15);
+            this.mapl5_c.TabIndex = 62;
+            this.mapl5_c.Text = "mapl1";
+            // 
+            // mapl4_c
+            // 
+            this.mapl4_c.AutoSize = true;
+            this.mapl4_c.BackColor = System.Drawing.Color.Transparent;
+            this.mapl4_c.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.mapl4_c.ForeColor = System.Drawing.Color.OrangeRed;
+            this.mapl4_c.Location = new System.Drawing.Point(878, 374);
+            this.mapl4_c.Name = "mapl4_c";
+            this.mapl4_c.Size = new System.Drawing.Size(42, 15);
+            this.mapl4_c.TabIndex = 62;
+            this.mapl4_c.Text = "mapl1";
+            // 
+            // mapl6
+            // 
+            this.mapl6.AutoSize = true;
+            this.mapl6.BackColor = System.Drawing.Color.Transparent;
+            this.mapl6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.mapl6.ForeColor = System.Drawing.Color.OrangeRed;
+            this.mapl6.Location = new System.Drawing.Point(534, 575);
+            this.mapl6.Name = "mapl6";
+            this.mapl6.Size = new System.Drawing.Size(57, 19);
+            this.mapl6.TabIndex = 61;
+            this.mapl6.Text = "label17";
+            this.mapl6.Visible = false;
+            // 
+            // mapl5
+            // 
+            this.mapl5.AutoSize = true;
+            this.mapl5.BackColor = System.Drawing.Color.Transparent;
+            this.mapl5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.mapl5.ForeColor = System.Drawing.Color.OrangeRed;
+            this.mapl5.Location = new System.Drawing.Point(111, 343);
+            this.mapl5.Name = "mapl5";
+            this.mapl5.Size = new System.Drawing.Size(57, 19);
+            this.mapl5.TabIndex = 61;
+            this.mapl5.Text = "label17";
+            this.mapl5.Visible = false;
+            // 
+            // mapl4
+            // 
+            this.mapl4.AutoSize = true;
+            this.mapl4.BackColor = System.Drawing.Color.Transparent;
+            this.mapl4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.mapl4.ForeColor = System.Drawing.Color.OrangeRed;
+            this.mapl4.Location = new System.Drawing.Point(834, 389);
+            this.mapl4.Name = "mapl4";
+            this.mapl4.Size = new System.Drawing.Size(57, 19);
+            this.mapl4.TabIndex = 61;
+            this.mapl4.Text = "label17";
+            this.mapl4.Visible = false;
+            // 
+            // map7
+            // 
+            this.map7.BackColor = System.Drawing.Color.Transparent;
+            this.map7.Image = global::WeatherApp.Properties.Resources.breezy;
+            this.map7.Location = new System.Drawing.Point(527, 529);
+            this.map7.Name = "map7";
+            this.map7.Size = new System.Drawing.Size(55, 46);
+            this.map7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.map7.TabIndex = 60;
+            this.map7.TabStop = false;
+            // 
+            // map6
+            // 
+            this.map6.BackColor = System.Drawing.Color.Transparent;
+            this.map6.Image = global::WeatherApp.Properties.Resources.breezy;
+            this.map6.Location = new System.Drawing.Point(104, 297);
+            this.map6.Name = "map6";
+            this.map6.Size = new System.Drawing.Size(55, 46);
+            this.map6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.map6.TabIndex = 60;
+            this.map6.TabStop = false;
+            // 
+            // map5
+            // 
+            this.map5.BackColor = System.Drawing.Color.Transparent;
+            this.map5.Image = global::WeatherApp.Properties.Resources.breezy;
+            this.map5.Location = new System.Drawing.Point(827, 353);
+            this.map5.Name = "map5";
+            this.map5.Size = new System.Drawing.Size(55, 46);
+            this.map5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.map5.TabIndex = 60;
+            this.map5.TabStop = false;
             // 
             // mapl3_c
             // 
@@ -864,7 +1027,7 @@
             // 
             this.map3.BackColor = System.Drawing.Color.Transparent;
             this.map3.Image = global::WeatherApp.Properties.Resources.breezy;
-            this.map3.Location = new System.Drawing.Point(474, 213);
+            this.map3.Location = new System.Drawing.Point(473, 210);
             this.map3.Name = "map3";
             this.map3.Size = new System.Drawing.Size(55, 46);
             this.map3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -913,7 +1076,7 @@
             this.mapl_c.BackColor = System.Drawing.Color.Transparent;
             this.mapl_c.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.mapl_c.ForeColor = System.Drawing.Color.OrangeRed;
-            this.mapl_c.Location = new System.Drawing.Point(710, 353);
+            this.mapl_c.Location = new System.Drawing.Point(724, 362);
             this.mapl_c.Name = "mapl_c";
             this.mapl_c.Size = new System.Drawing.Size(42, 15);
             this.mapl_c.TabIndex = 50;
@@ -925,7 +1088,7 @@
             this.mapl.BackColor = System.Drawing.Color.Transparent;
             this.mapl.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.mapl.ForeColor = System.Drawing.Color.OrangeRed;
-            this.mapl.Location = new System.Drawing.Point(666, 368);
+            this.mapl.Location = new System.Drawing.Point(680, 377);
             this.mapl.Name = "mapl";
             this.mapl.Size = new System.Drawing.Size(49, 19);
             this.mapl.TabIndex = 49;
@@ -936,7 +1099,7 @@
             // 
             this.map1.BackColor = System.Drawing.Color.Transparent;
             this.map1.Image = global::WeatherApp.Properties.Resources.breezy;
-            this.map1.Location = new System.Drawing.Point(660, 333);
+            this.map1.Location = new System.Drawing.Point(674, 331);
             this.map1.Name = "map1";
             this.map1.Size = new System.Drawing.Size(55, 46);
             this.map1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -972,133 +1135,190 @@
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
-            // mapl4_c
+            // map8
             // 
-            this.mapl4_c.AutoSize = true;
-            this.mapl4_c.BackColor = System.Drawing.Color.Transparent;
-            this.mapl4_c.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.mapl4_c.ForeColor = System.Drawing.Color.OrangeRed;
-            this.mapl4_c.Location = new System.Drawing.Point(878, 374);
-            this.mapl4_c.Name = "mapl4_c";
-            this.mapl4_c.Size = new System.Drawing.Size(42, 15);
-            this.mapl4_c.TabIndex = 62;
-            this.mapl4_c.Text = "mapl1";
+            this.map8.BackColor = System.Drawing.Color.Transparent;
+            this.map8.Image = global::WeatherApp.Properties.Resources.breezy;
+            this.map8.Location = new System.Drawing.Point(576, 353);
+            this.map8.Name = "map8";
+            this.map8.Size = new System.Drawing.Size(55, 46);
+            this.map8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.map8.TabIndex = 48;
+            this.map8.TabStop = false;
+            this.map8.Click += new System.EventHandler(this.map1_Click);
             // 
-            // mapl4
+            // mapl7
             // 
-            this.mapl4.AutoSize = true;
-            this.mapl4.BackColor = System.Drawing.Color.Transparent;
-            this.mapl4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.mapl4.ForeColor = System.Drawing.Color.OrangeRed;
-            this.mapl4.Location = new System.Drawing.Point(834, 389);
-            this.mapl4.Name = "mapl4";
-            this.mapl4.Size = new System.Drawing.Size(57, 19);
-            this.mapl4.TabIndex = 61;
-            this.mapl4.Text = "label17";
-            this.mapl4.Visible = false;
+            this.mapl7.AutoSize = true;
+            this.mapl7.BackColor = System.Drawing.Color.Transparent;
+            this.mapl7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.mapl7.ForeColor = System.Drawing.Color.OrangeRed;
+            this.mapl7.Location = new System.Drawing.Point(582, 388);
+            this.mapl7.Name = "mapl7";
+            this.mapl7.Size = new System.Drawing.Size(49, 19);
+            this.mapl7.TabIndex = 49;
+            this.mapl7.Text = "mapl1";
+            this.mapl7.Visible = false;
             // 
-            // map5
+            // mapl7_c
             // 
-            this.map5.BackColor = System.Drawing.Color.Transparent;
-            this.map5.Image = global::WeatherApp.Properties.Resources.breezy;
-            this.map5.Location = new System.Drawing.Point(827, 353);
-            this.map5.Name = "map5";
-            this.map5.Size = new System.Drawing.Size(55, 46);
-            this.map5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.map5.TabIndex = 60;
-            this.map5.TabStop = false;
+            this.mapl7_c.AutoSize = true;
+            this.mapl7_c.BackColor = System.Drawing.Color.Transparent;
+            this.mapl7_c.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.mapl7_c.ForeColor = System.Drawing.Color.OrangeRed;
+            this.mapl7_c.Location = new System.Drawing.Point(626, 373);
+            this.mapl7_c.Name = "mapl7_c";
+            this.mapl7_c.Size = new System.Drawing.Size(42, 15);
+            this.mapl7_c.TabIndex = 50;
+            this.mapl7_c.Text = "mapl1";
             // 
-            // map6
+            // map9
             // 
-            this.map6.BackColor = System.Drawing.Color.Transparent;
-            this.map6.Image = global::WeatherApp.Properties.Resources.breezy;
-            this.map6.Location = new System.Drawing.Point(104, 297);
-            this.map6.Name = "map6";
-            this.map6.Size = new System.Drawing.Size(55, 46);
-            this.map6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.map6.TabIndex = 60;
-            this.map6.TabStop = false;
+            this.map9.BackColor = System.Drawing.Color.Transparent;
+            this.map9.Image = global::WeatherApp.Properties.Resources.breezy;
+            this.map9.Location = new System.Drawing.Point(742, 248);
+            this.map9.Name = "map9";
+            this.map9.Size = new System.Drawing.Size(55, 46);
+            this.map9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.map9.TabIndex = 48;
+            this.map9.TabStop = false;
+            this.map9.Click += new System.EventHandler(this.map1_Click);
             // 
-            // mapl5
+            // mapl8
             // 
-            this.mapl5.AutoSize = true;
-            this.mapl5.BackColor = System.Drawing.Color.Transparent;
-            this.mapl5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.mapl5.ForeColor = System.Drawing.Color.OrangeRed;
-            this.mapl5.Location = new System.Drawing.Point(111, 343);
-            this.mapl5.Name = "mapl5";
-            this.mapl5.Size = new System.Drawing.Size(57, 19);
-            this.mapl5.TabIndex = 61;
-            this.mapl5.Text = "label17";
-            this.mapl5.Visible = false;
+            this.mapl8.AutoSize = true;
+            this.mapl8.BackColor = System.Drawing.Color.Transparent;
+            this.mapl8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.mapl8.ForeColor = System.Drawing.Color.OrangeRed;
+            this.mapl8.Location = new System.Drawing.Point(748, 291);
+            this.mapl8.Name = "mapl8";
+            this.mapl8.Size = new System.Drawing.Size(49, 19);
+            this.mapl8.TabIndex = 49;
+            this.mapl8.Text = "mapl1";
+            this.mapl8.Visible = false;
             // 
-            // mapl5_c
+            // mapl8_c
             // 
-            this.mapl5_c.AutoSize = true;
-            this.mapl5_c.BackColor = System.Drawing.Color.Transparent;
-            this.mapl5_c.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.mapl5_c.ForeColor = System.Drawing.Color.OrangeRed;
-            this.mapl5_c.Location = new System.Drawing.Point(155, 328);
-            this.mapl5_c.Name = "mapl5_c";
-            this.mapl5_c.Size = new System.Drawing.Size(42, 15);
-            this.mapl5_c.TabIndex = 62;
-            this.mapl5_c.Text = "mapl1";
+            this.mapl8_c.AutoSize = true;
+            this.mapl8_c.BackColor = System.Drawing.Color.Transparent;
+            this.mapl8_c.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.mapl8_c.ForeColor = System.Drawing.Color.OrangeRed;
+            this.mapl8_c.Location = new System.Drawing.Point(792, 276);
+            this.mapl8_c.Name = "mapl8_c";
+            this.mapl8_c.Size = new System.Drawing.Size(42, 15);
+            this.mapl8_c.TabIndex = 50;
+            this.mapl8_c.Text = "mapl1";
             // 
-            // map7
+            // map10
             // 
-            this.map7.BackColor = System.Drawing.Color.Transparent;
-            this.map7.Image = global::WeatherApp.Properties.Resources.breezy;
-            this.map7.Location = new System.Drawing.Point(527, 529);
-            this.map7.Name = "map7";
-            this.map7.Size = new System.Drawing.Size(55, 46);
-            this.map7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.map7.TabIndex = 60;
-            this.map7.TabStop = false;
+            this.map10.BackColor = System.Drawing.Color.Transparent;
+            this.map10.Image = global::WeatherApp.Properties.Resources.breezy;
+            this.map10.Location = new System.Drawing.Point(629, 112);
+            this.map10.Name = "map10";
+            this.map10.Size = new System.Drawing.Size(55, 46);
+            this.map10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.map10.TabIndex = 48;
+            this.map10.TabStop = false;
+            this.map10.Click += new System.EventHandler(this.map1_Click);
             // 
-            // mapl6
+            // mapl9
             // 
-            this.mapl6.AutoSize = true;
-            this.mapl6.BackColor = System.Drawing.Color.Transparent;
-            this.mapl6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.mapl6.ForeColor = System.Drawing.Color.OrangeRed;
-            this.mapl6.Location = new System.Drawing.Point(534, 575);
-            this.mapl6.Name = "mapl6";
-            this.mapl6.Size = new System.Drawing.Size(57, 19);
-            this.mapl6.TabIndex = 61;
-            this.mapl6.Text = "label17";
-            this.mapl6.Visible = false;
+            this.mapl9.AutoSize = true;
+            this.mapl9.BackColor = System.Drawing.Color.Transparent;
+            this.mapl9.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.mapl9.ForeColor = System.Drawing.Color.OrangeRed;
+            this.mapl9.Location = new System.Drawing.Point(635, 158);
+            this.mapl9.Name = "mapl9";
+            this.mapl9.Size = new System.Drawing.Size(49, 19);
+            this.mapl9.TabIndex = 49;
+            this.mapl9.Text = "mapl1";
+            this.mapl9.Visible = false;
             // 
-            // mapl6_c
+            // mapl9_c
             // 
-            this.mapl6_c.AutoSize = true;
-            this.mapl6_c.BackColor = System.Drawing.Color.Transparent;
-            this.mapl6_c.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.mapl6_c.ForeColor = System.Drawing.Color.OrangeRed;
-            this.mapl6_c.Location = new System.Drawing.Point(573, 560);
-            this.mapl6_c.Name = "mapl6_c";
-            this.mapl6_c.Size = new System.Drawing.Size(42, 15);
-            this.mapl6_c.TabIndex = 62;
-            this.mapl6_c.Text = "mapl1";
+            this.mapl9_c.AutoSize = true;
+            this.mapl9_c.BackColor = System.Drawing.Color.Transparent;
+            this.mapl9_c.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.mapl9_c.ForeColor = System.Drawing.Color.OrangeRed;
+            this.mapl9_c.Location = new System.Drawing.Point(679, 143);
+            this.mapl9_c.Name = "mapl9_c";
+            this.mapl9_c.Size = new System.Drawing.Size(42, 15);
+            this.mapl9_c.TabIndex = 50;
+            this.mapl9_c.Text = "mapl1";
             // 
-            // label15
+            // map11
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label15.Location = new System.Drawing.Point(8, 610);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(189, 15);
-            this.label15.TabIndex = 46;
-            this.label15.Text = "@ Piotr Stachaczyński v0.5  2017";
+            this.map11.BackColor = System.Drawing.Color.Transparent;
+            this.map11.Image = global::WeatherApp.Properties.Resources.breezy;
+            this.map11.Location = new System.Drawing.Point(727, -8);
+            this.map11.Name = "map11";
+            this.map11.Size = new System.Drawing.Size(55, 46);
+            this.map11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.map11.TabIndex = 48;
+            this.map11.TabStop = false;
+            this.map11.Click += new System.EventHandler(this.map1_Click);
             // 
-            // label17
+            // mapl10
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label17.Location = new System.Drawing.Point(4, 610);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(189, 15);
-            this.label17.TabIndex = 63;
-            this.label17.Text = "@ Piotr Stachaczyński v0.5  2017";
+            this.mapl10.AutoSize = true;
+            this.mapl10.BackColor = System.Drawing.Color.Transparent;
+            this.mapl10.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.mapl10.ForeColor = System.Drawing.Color.OrangeRed;
+            this.mapl10.Location = new System.Drawing.Point(733, 38);
+            this.mapl10.Name = "mapl10";
+            this.mapl10.Size = new System.Drawing.Size(49, 19);
+            this.mapl10.TabIndex = 49;
+            this.mapl10.Text = "mapl1";
+            this.mapl10.Visible = false;
+            // 
+            // mapl10_c
+            // 
+            this.mapl10_c.AutoSize = true;
+            this.mapl10_c.BackColor = System.Drawing.Color.Transparent;
+            this.mapl10_c.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.mapl10_c.ForeColor = System.Drawing.Color.OrangeRed;
+            this.mapl10_c.Location = new System.Drawing.Point(777, 23);
+            this.mapl10_c.Name = "mapl10_c";
+            this.mapl10_c.Size = new System.Drawing.Size(42, 15);
+            this.mapl10_c.TabIndex = 50;
+            this.mapl10_c.Text = "mapl1";
+            // 
+            // map12
+            // 
+            this.map12.BackColor = System.Drawing.Color.Transparent;
+            this.map12.Image = global::WeatherApp.Properties.Resources.breezy;
+            this.map12.Location = new System.Drawing.Point(325, 276);
+            this.map12.Name = "map12";
+            this.map12.Size = new System.Drawing.Size(55, 46);
+            this.map12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.map12.TabIndex = 48;
+            this.map12.TabStop = false;
+            this.map12.Click += new System.EventHandler(this.map1_Click);
+            // 
+            // mapl11
+            // 
+            this.mapl11.AutoSize = true;
+            this.mapl11.BackColor = System.Drawing.Color.Transparent;
+            this.mapl11.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.mapl11.ForeColor = System.Drawing.Color.OrangeRed;
+            this.mapl11.Location = new System.Drawing.Point(331, 311);
+            this.mapl11.Name = "mapl11";
+            this.mapl11.Size = new System.Drawing.Size(49, 19);
+            this.mapl11.TabIndex = 49;
+            this.mapl11.Text = "mapl1";
+            this.mapl11.Visible = false;
+            // 
+            // mapl11_c
+            // 
+            this.mapl11_c.AutoSize = true;
+            this.mapl11_c.BackColor = System.Drawing.Color.Transparent;
+            this.mapl11_c.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.mapl11_c.ForeColor = System.Drawing.Color.OrangeRed;
+            this.mapl11_c.Location = new System.Drawing.Point(375, 296);
+            this.mapl11_c.Name = "mapl11_c";
+            this.mapl11_c.Size = new System.Drawing.Size(42, 15);
+            this.mapl11_c.TabIndex = 50;
+            this.mapl11_c.Text = "mapl1";
             // 
             // Form1
             // 
@@ -1135,14 +1355,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.map7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.map6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.map5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.map4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.map3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.map2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.map1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.map5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.map6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.map7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.map8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.map9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.map10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.map11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.map12)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1228,6 +1453,21 @@
         private System.Windows.Forms.PictureBox map7;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label mapl7_c;
+        private System.Windows.Forms.Label mapl7;
+        private System.Windows.Forms.PictureBox map8;
+        private System.Windows.Forms.Label mapl8_c;
+        private System.Windows.Forms.Label mapl8;
+        private System.Windows.Forms.PictureBox map9;
+        private System.Windows.Forms.Label mapl9_c;
+        private System.Windows.Forms.Label mapl9;
+        private System.Windows.Forms.PictureBox map10;
+        private System.Windows.Forms.Label mapl11_c;
+        private System.Windows.Forms.Label mapl10_c;
+        private System.Windows.Forms.Label mapl11;
+        private System.Windows.Forms.Label mapl10;
+        private System.Windows.Forms.PictureBox map12;
+        private System.Windows.Forms.PictureBox map11;
     }
 }
 

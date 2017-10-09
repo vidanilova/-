@@ -18,7 +18,7 @@ namespace WeatherApp
 {
     public partial class Form1 : Form
     {
-        String Querry,QuerryKrosno, QuerryJaslo, QuerryPrzemysl, QuerrySanok, QuerrySacz, QuerrySvidnik;
+        String Querry,QuerryKrosno, QuerryJaslo, QuerryPrzemysl, QuerrySanok, QuerrySacz, QuerrySvidnik, QuerryDukla, QuerryBrzozow, QuerryStrzyzow, QuerryRzeszow, QuerryGorlice;
         Weather info = new Weather();
         public Form1()
         {
@@ -44,6 +44,11 @@ namespace WeatherApp
             QuerrySanok = "https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where woeid = 517369 and u='c' &format=json";
             QuerrySacz = "https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where woeid = 509923 and u='c' &format=json";
             QuerrySvidnik = "https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where woeid = 509923 and u='c' &format=json";
+            QuerryDukla = "https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where woeid = 492348 and u='c' &format=json";
+            QuerryBrzozow = "https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where woeid = 488211 and u='c' &format=json";
+            QuerryStrzyzow = "https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where woeid = 520664 and u='c' &format=json";
+            QuerryRzeszow = "https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where woeid = 517126 and u='c' &format=json";
+            QuerryGorlice = "https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where woeid = 494420 and u='c' &format=json";
 
             var Generalforecast = info.GetWeather(Querry);
             var GeneralforecastKrosno = info.GetWeather(QuerryKrosno);
@@ -52,6 +57,11 @@ namespace WeatherApp
             var GeneralforecastSanok = info.GetWeather(QuerrySanok);
             var GeneralforecastSacz = info.GetWeather(QuerrySacz);
             var GeneralforecastSvidnik = info.GetWeather(QuerrySvidnik);
+            var GeneralforecastDukla = info.GetWeather(QuerryDukla);
+            var GeneralforecastBrzozow = info.GetWeather(QuerryBrzozow);
+            var GeneralforecastStrzyzow = info.GetWeather(QuerryStrzyzow);
+            var GeneralforecastRzeszow = info.GetWeather(QuerryRzeszow);
+            var GeneralforecastGorlice = info.GetWeather(QuerryGorlice);
 
             var Windforecast = info.GetWeatherWind(Querry);
             var Atmosphereforecast = info.GetWeatherAtmosphere(Querry);
@@ -92,6 +102,11 @@ namespace WeatherApp
             mapl4_c.Text = GeneralforecastSanok.temp + " C";
             mapl5_c.Text = GeneralforecastSacz.temp + " C";
             mapl6_c.Text = GeneralforecastSvidnik.temp + " C";
+            mapl7_c.Text = GeneralforecastDukla.temp + " C";
+            mapl8_c.Text = GeneralforecastBrzozow.temp + " C";
+            mapl9_c.Text = GeneralforecastStrzyzow.temp + " C";
+            mapl10_c.Text = GeneralforecastRzeszow.temp + " C";
+            mapl11_c.Text = GeneralforecastGorlice.temp + " C";
 
             mapl.Text = Generalforecast.text;
             mapl1.Text = GeneralforecastKrosno.text;
@@ -100,6 +115,11 @@ namespace WeatherApp
             mapl4.Text = GeneralforecastSanok.text;
             mapl5.Text = GeneralforecastSacz.text;
             mapl6.Text = GeneralforecastSvidnik.text;
+            mapl7.Text = GeneralforecastDukla.text;
+            mapl8.Text = GeneralforecastBrzozow.text;
+            mapl9.Text = GeneralforecastStrzyzow.text;
+            mapl10.Text = GeneralforecastRzeszow.text;
+            mapl11.Text = GeneralforecastGorlice.text;
 
             SetUp();
         }
@@ -137,6 +157,11 @@ namespace WeatherApp
             PolishCondition(mapl4);
             PolishCondition(mapl5);
             PolishCondition(mapl6);
+            PolishCondition(mapl7);
+            PolishCondition(mapl8);
+            PolishCondition(mapl9);
+            PolishCondition(mapl10);
+            PolishCondition(mapl11);
 
             CorrectPic(label1,pictureBox2);
             CorrectPic(con1, pic1);
@@ -151,6 +176,11 @@ namespace WeatherApp
             CorrectPic(mapl4, map5);
             CorrectPic(mapl5, map6);
             CorrectPic(mapl6, map7);
+            CorrectPic(mapl7, map8);
+            CorrectPic(mapl8, map9);
+            CorrectPic(mapl9, map10);
+            CorrectPic(mapl10, map11);
+            CorrectPic(mapl11, map12);
         }
 
         public void PolishDays(Label day)
@@ -197,6 +227,10 @@ namespace WeatherApp
             if (con.Text == "Mostly Cloudy")
             {
                 con.Text = "Zachmurzenie";
+            }
+            if (con.Text == "Partly Cloudy")
+            {
+                con.Text = "Lekkie Zachmurzenie";
             }
             if (con.Text == "Sunny")
             {
@@ -301,6 +335,13 @@ namespace WeatherApp
             }
 
             if (l.Text == "Zachmurzenie")
+            {
+                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+                string filePath = Path.Combine(directory, "Pack\\zachmurzenie.png");
+                p.Image = Image.FromFile(filePath);
+            }
+
+            if (l.Text == "Lekkie Zachmurzenie")
             {
                 string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
                 string filePath = Path.Combine(directory, "Pack\\zachmurzenie.png");
