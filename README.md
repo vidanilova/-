@@ -5,7 +5,6 @@ This is one of the first programs written by me in C#. I was planning to make it
 
 ## Table of contents
 * [General info](#general-info)
-* [Screenshots](#screenshots)
 * [Technologies](#technologies)
 * [Features](#features)
 * [Status](#status)
@@ -15,9 +14,6 @@ This is one of the first programs written by me in C#. I was planning to make it
 ## General info
 The program has two basic functionalities. One is a weather forecast for a few days, the other is a map preview with the current weather of the nearest area. This helps to set the current weather for the next few hours. The program interface works in Polish. However, some information may be in English because I did not translate all messages returned by yahoo
 
-## Screenshots
-![one](http://oi66.tinypic.com/o9pl76.jpg)
-![two](http://oi66.tinypic.com/25ppbtl.jpg)
 
 ## Technologies
 * C#
